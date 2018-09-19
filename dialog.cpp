@@ -9,9 +9,6 @@
 #include <QFileDialog>
 #include <QFileInfo>
 #include <QInputDialog>
-#include <QJsonArray>
-#include <QJsonDocument>
-#include <QJsonObject>
 #include <QMap>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
