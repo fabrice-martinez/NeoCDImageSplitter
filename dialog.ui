@@ -24,7 +24,7 @@
        <bool>false</bool>
       </attribute>
      </widget>
-     <widget class="QListWidget" name="logListWidget"/>
+     <widget class="LoggerListWidget" name="logListWidget"/>
     </widget>
    </item>
    <item>
@@ -48,41 +48,15 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>LoggerListWidget</class>
+   <extends>QListWidget</extends>
+   <header>loggerlistwidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>loadCueButton</sender>
-   <signal>clicked()</signal>
-   <receiver>Dialog</receiver>
-   <slot>loadCUE()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>108</x>
-     <y>481</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>311</x>
-     <y>251</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>createSplitVersionButton</sender>
-   <signal>clicked()</signal>
-   <receiver>Dialog</receiver>
-   <slot>createSplitFileVersion()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>515</x>
-     <y>481</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>311</x>
-     <y>251</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>loadCUE()</slot>
   <slot>createSplitFileVersion()</slot>

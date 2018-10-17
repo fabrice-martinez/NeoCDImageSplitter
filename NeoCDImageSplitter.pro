@@ -15,13 +15,22 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
         dialog.cpp \
-    edc.cpp \
-    qpropertymemory.cpp
+    logger.cpp \
+    loggerlistwidget.cpp \
+    cdromtoc.cpp \
+    wavfile.cpp \
+    imagewriterworker.cpp
 
 HEADERS  += dialog.h \
-    edc.h \
-    qpropertymemory.h \
-    wavfile.h
+    wavfile.h \
+    logger.h \
+    loggerlistwidget.h \
+    cdromtoc.h \
+    endian.h \
+    packedstruct.h \
+    trackindex.h \
+    imagewriterworker.h \
+    wavstruct.h
 
 FORMS    += dialog.ui
 
